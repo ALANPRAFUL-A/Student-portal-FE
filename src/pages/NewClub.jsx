@@ -24,7 +24,7 @@ function NewClub() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://student-portal-1-571f.onrender.com/api/clubs", formData);
+      await axios.post("https://student-portal-be.onrender.com/api/clubs", formData);
       navigate("/clubs");
     } catch (err) {
       console.error("Error creating club", err);

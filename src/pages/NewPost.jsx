@@ -25,7 +25,7 @@ const NewPost = () => {
 
     try {
       await axios.post(
-        'https://student-portal-1-571f.onrender.com/api/forum',
+        'https://student-portal-be.onrender.com/api/forum',
         formData,
         {
           headers: {

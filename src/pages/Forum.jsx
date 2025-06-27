@@ -7,7 +7,7 @@ const Forum = ({ student }) => {
 
   const fetchPosts = async () => {
     try {
-      const res = await fetch("https://student-portal-1-571f.onrender.com/api/forum");
+      const res = await fetch("https://student-portal-be.onrender.com/api/forum");
       if (!res.ok) {
         throw new Error("Failed to fetch posts");
       }
@@ -26,7 +26,7 @@ const Forum = ({ student }) => {
 
   const handleDelete = async (id) => {
   try {
-    const res = await fetch(`https://student-portal-1-571f.onrender.com/api/forum/${id}`, {
+    const res = await fetch(`https://student-portal-be.onrender.com/api/forum/${id}`, {
       method: "DELETE",
     });
 

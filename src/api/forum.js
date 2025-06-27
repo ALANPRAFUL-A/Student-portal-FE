@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://student-portal-1-571f.onrender.com/api/forum",
+  baseURL: "https://student-portal-be.onrender.com/api/forum",
 });
 
 

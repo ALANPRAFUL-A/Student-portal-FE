@@ -8,7 +8,7 @@ function Events() {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const res = await axios.get("https://student-portal-1-571f.onrender.com/api/events");
+        const res = await axios.get("https://student-portal-be.onrender.com/api/events");
         setEvents(res.data);
       } catch (error) {
         console.error("Failed to fetch events", error);
@@ -20,7 +20,7 @@ function Events() {
 
   const handleDelete = async (id) => {
   try {
-    await fetch(`https://student-portal-1-571f.onrender.com/api/events/${id}`, {
+    await fetch(`https://student-portal-be.onrender.com/api/events/${id}`, {
       method: "DELETE",
     });
     setEvents(events.filter((event) => event._id !== id)); 

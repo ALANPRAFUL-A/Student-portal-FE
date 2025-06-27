@@ -8,7 +8,7 @@ function JobBoard() {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const res = await axios.get("https://student-portal-1-571f.onrender.com/api/jobs");
+        const res = await axios.get("https://student-portal-be.onrender.com/api/jobs");
         setJobs(res.data);
       } catch (error) {
         console.error("Failed to fetch Jobs", error);
@@ -20,7 +20,7 @@ function JobBoard() {
 
   const handleDelete = async (id) => {
   try {
-    await fetch(`https://student-portal-1-571f.onrender.com/api/jobs/${id}`, {
+    await fetch(`https://student-portal-be.onrender.com/api/jobs/${id}`, {
       method: "DELETE",
     });
     setJobs(jobs.filter((job) => job._id !== id));

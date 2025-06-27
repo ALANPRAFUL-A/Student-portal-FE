@@ -23,7 +23,7 @@ function Register() {
     setError("");
 
     try {
-      const res = await axios.post("https://student-portal-1-571f.onrender.com/api/auth/register", form);
+      const res = await axios.post("https://student-portal-be.onrender.com/api/auth/register", form);
       alert(res.data.message);
       navigate("/login");
     } catch (err) {

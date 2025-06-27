@@ -8,7 +8,7 @@ function Clubs() {
   useEffect(() => {
     const fetchClubs = async () => {
       try {
-        const res = await axios.get("https://student-portal-1-571f.onrender.com/api/clubs");
+        const res = await axios.get("https://student-portal-be.onrender.com/api/clubs");
         setClubs(res.data);
       } catch (err) {
         console.error("Failed to load clubs", err);
@@ -20,7 +20,7 @@ function Clubs() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://student-portal-1-571f.onrender.com/api/clubs/${id}`);
+      await axios.delete(`https://student-portal-be.onrender.com/api/clubs/${id}`);
       setClubs(clubs.filter((club) => club._id !== id));
     } catch (err) {
       console.error("Failed to delete club", err);

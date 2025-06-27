@@ -11,7 +11,7 @@ function ResumeChecker() {
     const formData = new FormData();
     formData.append("resume", file);
     try {
-      const res = await axios.post("https://student-portal-1-571f.onrender.com/upload", formData);
+      const res = await axios.post("https://student-portal-be.onrender.com/upload", formData);
       setResult(res.data);
     } catch (err) {
       console.error("Upload failed:", err);

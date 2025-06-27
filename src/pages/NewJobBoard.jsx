@@ -24,7 +24,7 @@ function NewJobBoard() {
     e.preventDefault();
 
     try {
-      await axios.post("https://student-portal-1-571f.onrender.com/api/jobs", formData);
+      await axios.post("https://student-portal-be.onrender.com/api/jobs", formData);
       alert("Job created successfully!");
       navigate("/jobs");
     } catch (error) {
