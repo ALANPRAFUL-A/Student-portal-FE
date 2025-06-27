@@ -1,0 +1,129 @@
+*{
+  background-color: #e3f0a3;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+nav{
+  box-shadow: 3px 3px 5px rgba(0,0,0, 0.1);
+  
+  
+}
+ul{
+  width: 100%;
+  list-style: none;
+ display: flex;
+}
+nav li{
+  height: 50px;
+ 
+}
+
+.links{
+ height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.links:hover{
+  background-color: #badba2;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  max-width: 200px;
+  z-index: 999;
+  background-color:  #e3f0a3;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar svg{
+ background-color:#015774;
+ border-radius: 5px;
+ padding: 2px;
+ margin-right: 5px;
+}
+.burger svg{
+ background-color:#015774;
+ border-radius: 5px;
+ padding: 2px;
+ 
+}
+
+.burger{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  max-width: 70px;
+  z-index: 999;
+  background-color:  #e3f0a3;
+  backdrop-filter: blur(10px);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 900px){
+  .sidebar{
+    display: none;
+  }
+}

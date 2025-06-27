@@ -1,0 +1,17 @@
+.fourm{
+  color: rgb(0, 0, 0);
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  white-space: nowrap;
+  animation:
+    typing 5s steps(100 , end),
+    blink-caret 5s step-end infinite
+}
+@keyframes typing {
+  from {width: 0; }
+  to {width: 100%;}
+  
+}

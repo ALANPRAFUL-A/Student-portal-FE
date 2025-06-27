@@ -1,0 +1,47 @@
+.jobboardform{
+   display: flex;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.jobboard-form{
+  background: #015774;
+  margin: auto;
+  padding: 50px;
+  max-width: 300px;
+  border-radius: 20px;
+  
+}
+.submitbutton{
+    border: none;
+  color: white;
+  background-color: rgb(21, 138, 241);
+  margin-top: 10px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px; 
+}
+.submitbutton:hover{
+  opacity: .8;
+}
+
+.jobboardinput {
+   height: 30px;
+  width: 215px;
+  border-radius: 5px;
+  border:none;
+  background-color: rgb(227, 231, 232);
+  margin: auto;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.jobboardinput:hover{
+  box-shadow: 5px 5px 8px rgb(58, 58, 58);
+}
+.jobboardheading{
+  padding: 5px;
+  margin: 10px;
+}
