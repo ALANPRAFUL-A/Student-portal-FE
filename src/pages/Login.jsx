@@ -11,10 +11,11 @@ function Login({ onLogin }) {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://student-portal-be.onrender.com/api/auth/login", {
-        email,
-        password,
-      });
+      const res = await axios.post(
+      "https://student-portal-be.onrender.com/api/auth/login",
+        { email, password },  
+        { withCredentials: true } 
+      );
 
       localStorage.setItem("token", res.data.token); 
       onLogin({
